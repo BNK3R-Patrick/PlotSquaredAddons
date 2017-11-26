@@ -20,6 +20,8 @@ public class Main extends JavaPlugin
         return s_instance;
     }
 
+    private PlotAPI m_plotApi = new PlotAPI();
+
     @Override
     public void onEnable()
     {
@@ -38,5 +40,11 @@ public class Main extends JavaPlugin
         }
 
         new ResetMetaData();
+
+    }
+
+    public PlotAPI getPlotApi()
+    {
+        return m_plotApi;
     }
 }
